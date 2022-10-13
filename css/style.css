@@ -1,0 +1,148 @@
+html, body{
+    background-color: black;
+    color: #fff;
+}
+:root {
+    --color1: #f23005;
+    --color2: #fff;
+}
+
+/* header */
+header{
+    background-image: url(../files/group.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav-link.active{
+    color: var(--color1);
+}
+.nav-link.active::after{
+    content: "";
+    display: block;
+    width: 75%;
+    background-color: #f23005;
+    height: 3px;
+    margin: 10px auto;
+}
+.nav-link{
+    color: var(--color2);
+}
+.nav-link:hover{
+    color: var(--color1);
+}
+.nav-link:focus{
+    color: var(--color1)
+}
+.line{
+    width: 70%;
+    height: 3px;
+    background-color: var(--color1);
+    margin: 5px auto 30px;
+}
+.list-group{
+    margin-left: 5px;
+    display: none;
+    width: 100%;
+}
+.list-group .active{
+    background-color: var(--color1);
+    outline: none;
+    border: none;
+}
+.list-group a{
+    background-color: black;
+    color: var(--color2);
+}
+/* carusel */
+.carousel{
+    margin: 0 15px;
+}
+.carousel h1{
+    text-transform: uppercase;
+    font-size: 75px;
+    font-weight: bold;
+}
+.carousel h2{
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 30px;
+}
+.carousel span{
+    color: var(--color1);
+}
+.slider-button a{
+    width: 45px;
+    height: 45px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid var(--color2);
+    color: var(--color2);
+    text-decoration: none;
+    font-size: 24px;
+    margin: 250px 15px 30px;
+}
+.slider-button::after{
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.carousel-button{
+    color: var(--color2);
+    border: 2px solid var(--color2);
+    padding: 10px 50px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 0;
+    margin-right: 15px;
+    float: right;
+    margin-bottom: 400px;
+}
+.learn-more{
+    background-color: var(--color1);
+    border: 2px solid var(--color1);
+}
+
+/* ofcanvas */
+
+.offcanvas-start{
+    background-color: black;
+}
+.menu-button{
+    background-color: var(--color1);
+    display: none;
+    border: none;
+}
+.btn-primary:hover{
+    background-color: var(--color1);
+}
+.btn-check:focus+.btn-primary, .btn-primary:focus{
+    border: none;
+}
+.menu-button:focus{
+    background-color:var(--color1);
+}
+@media  screen and (max-width: 576px) {
+    .nav{
+        display: none;
+    }
+    header{
+        background-image: none;
+        min-height: auto;
+    }
+    .list-group{
+        display: block;
+    }
+    .slider-button a{
+       display: none;
+    }
+    .carousel{
+        margin-top: 100px;
+    }
+    .menu-button{
+        display: block;
+    }
+}
