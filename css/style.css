@@ -5,6 +5,7 @@ html, body{
 :root {
     --color1: #f23005;
     --color2: #fff;
+    --color3: #343434;
 }
 
 /* header */
@@ -41,7 +42,6 @@ header{
 }
 .list-group{
     margin-left: 5px;
-    display: none;
     width: 100%;
 }
 .list-group .active{
@@ -89,7 +89,6 @@ header{
     width: 100%;
     clear: both;
 }
-
 .carousel-button{
     color: var(--color2);
     border: 2px solid var(--color2);
@@ -104,6 +103,10 @@ header{
 .learn-more{
     background-color: var(--color1);
     border: 2px solid var(--color1);
+}
+.start:hover{
+    background-color: #fff;
+    color: #343434;
 }
 
 /* ofcanvas */
@@ -125,16 +128,54 @@ header{
 .menu-button:focus{
     background-color:var(--color1);
 }
+
+
+
+/* main-content */
+.red-link{
+    background-color: var(--color1);
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+.red-link p{
+    font-size: 9px;
+}
+.red-link h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.main-content p{
+    display: inline-block;
+}
+.notebook{
+    max-width: 500px;
+}
+
+/* statistics */
+
+.statistics{
+    background-color: var(--color1);
+}
+.info{
+    margin: 100px 0;
+}
+.info h1{
+    font-size: 50px;
+}
+.info p{
+    font-size: 14px;
+}
+
+
 @media  screen and (max-width: 576px) {
     .nav{
         display: none;
     }
     header{
+        background-color: #343434;
         background-image: none;
-        min-height: auto;
-    }
-    .list-group{
-        display: block;
+        max-height: 1000px;
     }
     .slider-button a{
        display: none;
@@ -144,5 +185,23 @@ header{
     }
     .menu-button{
         display: block;
+    }
+    .carousel-button{
+        margin-bottom: 20px;
+    }
+    .main-content{
+        margin-top: 50px;
+    }
+    .main-content p{
+        margin-right: 15px;
+    }
+    .red-link{
+        margin-right: 15px;
+    }
+    .carousel-button{
+        min-width: 200px;
+    }
+    .info{
+        margin: 50px 0;
     }
 }
