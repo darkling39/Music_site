@@ -166,9 +166,15 @@ header{
 .info p{
     font-size: 14px;
 }
+/* addition */
+.addition{
+    background-image: url(../files/lorem_img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 200px 15px 200px 0;
+}
 
-
-@media  screen and (max-width: 576px) {
+@media  screen and (max-width: 768px) {
     .nav{
         display: none;
     }
@@ -203,5 +209,8 @@ header{
     }
     .info{
         margin: 50px 0;
+    }
+    footer{
+        display: none;
     }
 }
