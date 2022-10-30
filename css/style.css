@@ -7,13 +7,18 @@ html, body{
     --color2: #fff;
     --color3: #343434;
 }
+header, section{
+    padding: 20px 0 20px 0;
+}
 
 /* header */
 header{
+    
     background-image: url(../files/group.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .nav-link.active{
     color: var(--color1);
 }
@@ -96,13 +101,14 @@ header{
     font-size: 14px;
     font-weight: bold;
     border-radius: 0;
-    margin-right: 15px;
     float: right;
+    margin-right: 15px;
     margin-bottom: 400px;
 }
 .learn-more{
     background-color: var(--color1);
     border: 2px solid var(--color1);
+    margin-left: 20px;
 }
 .start:hover{
     background-color: #fff;
@@ -137,6 +143,7 @@ header{
     width: 100px;
     height: 100px;
     float: right;
+    margin-bottom: 50px;
 }
 .red-link p{
     font-size: 9px;
@@ -147,9 +154,16 @@ header{
 }
 .main-content p{
     display: inline-block;
+    margin-bottom: 100px;
 }
 .notebook{
     max-width: 500px;
+}
+
+.laptop{
+    background-image: url(../files/Laptop-copy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* statistics */
@@ -174,43 +188,40 @@ header{
     padding: 200px 15px 200px 0;
 }
 
-@media  screen and (max-width: 768px) {
-    .nav{
-        display: none;
-    }
-    header{
-        background-color: #343434;
-        background-image: none;
-        max-height: 1000px;
-    }
-    .slider-button a{
-       display: none;
-    }
-    .carousel{
-        margin-top: 100px;
-    }
+
+@media screen and (max-width: 993px){
     .menu-button{
         display: block;
     }
-    .carousel-button{
-        margin-bottom: 20px;
+    .nav{
+        display: none;
     }
-    .main-content{
-        margin-top: 50px;
+    .slider-button{
+        display: none;
     }
-    .main-content p{
-        margin-right: 15px;
-    }
-    .red-link{
-        margin-right: 15px;
+    header{
+        background-color: #151515;
+        background-image: none;
     }
     .carousel-button{
         min-width: 200px;
+        margin-bottom: 0;
+        margin-right: 0;
     }
-    .info{
-        margin: 50px 0;
+    .carousel{
+        margin: 100px 0 100px;
     }
+}
+@media  screen and (max-width: 576px) {
     footer{
         display: none;
+    }
+    .container{
+        padding-right: 20px;
+    }
+    .carousel-button{
+        display: block;
+        margin-bottom: 20px;
+        
     }
 }
