@@ -1,0 +1,65 @@
+html, body{
+    background-color: #000;
+    color: #fff;
+}
+i{
+    /* color: var(--color1); */
+}
+:root {
+    --color1: #f23005;
+    --color2: #fff;
+    --color3: #343434;
+    --color4: #000;
+}
+
+/* header */
+.logo{
+    padding: 25px;
+}
+.logo span{
+    color: var(--color1);
+}
+.account h6{
+    font-weight: lighter;
+    position: relative;
+    top: 20px;
+    margin-left: 10px;
+}
+.account h6::after{
+    content: "296 days";
+    color: var(--color1);
+    display: block;
+    font-size: 13px;
+    margin-top: 15px;
+}
+.search{
+    height: 100%;
+    background-color: var(--color1);
+}
+.search input{
+    border: none;
+    border-bottom: 1px solid var(--color2);
+    background-color: var(--color1);
+    color: var(--color2);
+    min-width: 300px;
+    padding: 0 0 5px 10px;
+    outline: none;
+    margin: 35px 0 0 35px;
+    font-size: 16px;
+}
+.search input::placeholder{
+    color: var(--color2);
+}
+.search i{
+    border-radius: 50%;
+    border: 1px solid var(--color2);
+    padding: 10px;
+    margin: 30px;
+    font-size: 18px;
+    font-weight: lighter;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.search i:hover{
+    background-color: #b83012;
+}
