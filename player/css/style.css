@@ -3,11 +3,14 @@ html, body{
     color: #fff;
     font-family: Helvetica, sans-serif;
 }
+a{
+    color: var(--bs-white);
+}
 :root {
     --color1: #f23005;
     --color2: #fff;
     --color3: #151515;
-    --color4: #000;
+    --color4: #0a0a0a;
 }
 .main{
     background-color: var(--color3);
@@ -256,6 +259,109 @@ html, body{
     color: var(--color1);
 }
 
+
+/* player */
+.player{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color4);
+    width: 100%;
+}
+.player img{
+    /* float: left;
+    margin: 25px 0 20px 25px; */
+    max-width: 70px;
+    max-height: 70px;
+}
+.player .current-track-name{
+    /* float: left;
+    margin-left: 30px;
+    margin-top: 35px; */
+    height: auto;
+    padding-top: 15px;
+}
+.current-track-name h6{
+    font-size: 14px;
+}
+.current-track-name p{
+    font-size: 12px;
+}
+
+/* .start-stop{
+    display: flex;
+    margin: 45px 0;
+
+     float: left;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+} */
+.icon-pause, .icon-to-end, .icon-to-start{
+    font-size: 20px;
+    padding: 5px;
+    color: var(--bs-white);
+}
+.icon-pause{
+    border: 1px solid var(--bs-white);
+    border-radius: 50%;
+}
+
+ .duration{
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pre-timer, .post-timer{
+    width: auto;
+    float: left;
+    position: relative;
+    top: 3px;
+}
+.duration-line{
+    width: 70%;
+    background-color: var(--color3);
+    height: 8px;
+    border-radius: 25px;
+    float: left;
+    margin: 0 20px;
+}
+    
+.current-duration{
+    width: 55%;
+    height: 8px;
+    border-radius: 25px;
+    background-color: var(--color1);
+}
+
+.mode{
+    float: left;
+    font-size: 22px;
+    padding-left: 20px;
+    font-weight: lighter;
+}
+.volume{
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1200px) {
     .search input{
         display: none;
@@ -267,5 +373,10 @@ html, body{
     .search{
         margin-right: -12px;
     }
-    
+    .song-logo img{
+        display: none;
+    }
+    .icon-to-start, .icon-to-end{
+        display: none;
+    }
 }
